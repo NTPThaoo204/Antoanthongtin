@@ -20,5 +20,39 @@ a.Kiến trúc hệ thống
   <img  src="READMI/so_do_hoat_dong_chi_tiet.png" alt="" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
   <img  src="READMI/bieu_do_tong_the.png" alt="" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
 </div>
+<p align="center">
+  <img src="READMI/so_do_hoat_dong_chi_tiet.png" alt="Sơ đồ hoạt động" width="45%"/>
+  <img src="READMI/bieu_do_tong_the.png" alt="Biểu đồ tổng thể" width="45%"/>
+</p>
+
 
 b.Thành phần kỹ thuật
+
+Thuật toán & công nghệ:
+- Mã hóa TripleDES
+  - Mã hóa đối xứng, chế độ CBC, đệm PKCS7.
+  - IV mới được tạo ngẫu nhiên cho từng tin nhắn.
+- Xác thực RSA
+  - Người gửi ký SHA-256 bằng khóa riêng.
+  - Người nhận dùng khóa công khai xác minh chữ ký.
+- Hàm băm SHA-256
+  - Tạo dấu vân tay của (IV || ciphertext) để đảm bảo toàn vẹn.
+<div style="text-align: center;">
+  <img  src="READMI/so_do_luong_du_lieu.png" alt="" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
+  <img  src="READMI/luong_du_lieu_gui_nhan.png" alt="" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
+</div>
+
+c.Các module chính
+- crypto_utils.py: thư viện mật mã.
+- chat_server.py: logic & GUI của Bob.
+- chat_client.py: logic & GUI của Alice.
+- Giao diện đồ họa xây dựng bằng tkinter, xử lý mạng với socket + threading.
+
+d.Thử nghiệm & kết quả
+- Thử nghiệm với văn bản (text) thành công.
+- Tốc độ handshake và gửi/nhận nhanh, chính xác.
+- Tin nhắn được mã hóa & giải mã đúng, toàn vẹn và xác thực.
+<div style="text-align: center;">
+  <img  src="READMI/kq_alice.png" alt="" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
+  <img  src="READMI/kq_bob.png" alt="" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
+</div>
