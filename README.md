@@ -37,6 +37,7 @@ Thuật toán & công nghệ:
   <img src="ANH/so_do_luong_du_lieu.png" alt="" width="300px" height="300px"/>
   <img src="ANH/luong_du_lieu_gui_nhan.png" alt="" width="290px" height="300px"/>
 </p>
+
 c.Các module chính
 - crypto_utils.py: thư viện mật mã.
 - chat_server.py: logic & GUI của Bob.
