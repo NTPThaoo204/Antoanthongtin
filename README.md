@@ -16,4 +16,9 @@ a.Kiến trúc hệ thống
   - Handshake: trao đổi khóa RSA.
   - Trao đổi khóa phiên 3DES (mã hóa bằng RSA).
   - Truyền tin an toàn: mã hóa bằng 3DES, kèm chữ ký số.
-<img src="C:/Users/NguyenThao/Pictures/so_do_hoat_dong_chi_tiet.png" alt="So do hoat dong chi tiet cua ung dung chat bao mat" width="250">
+<div style="text-align: center;">
+  <img  src="READMI/so_do_hoat_dong_chi_tiet.png" alt="" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
+  <img  src="READMI/bieu_do_tong_the.png" alt="" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
+</div>
+
+b.Thành phần kỹ thuật
