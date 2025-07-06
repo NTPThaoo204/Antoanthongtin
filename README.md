@@ -16,13 +16,9 @@ a.Kiến trúc hệ thống
   - Handshake: trao đổi khóa RSA.
   - Trao đổi khóa phiên 3DES (mã hóa bằng RSA).
   - Truyền tin an toàn: mã hóa bằng 3DES, kèm chữ ký số.
-<div style="text-align: center;">
-  <img  src="READMI/so_do_hoat_dong_chi_tiet.png" alt="" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
-  <img  src="READMI/bieu_do_tong_the.png" alt="" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
-</div>
 <p align="center">
-  <img src="READMI/so_do_hoat_dong_chi_tiet.png" alt="Sơ đồ hoạt động" width="45%"/>
-  <img src="READMI/bieu_do_tong_the.png" alt="Biểu đồ tổng thể" width="45%"/>
+  <img src="ANH/so_do_hoat_dong_chi_tiet.png" alt="" width="318px" height="300px"/>
+  <img src="ANH/bieu_do_tong_the.png" alt="" width="400px" height="300px"/>
 </p>
 
 
@@ -37,11 +33,10 @@ Thuật toán & công nghệ:
   - Người nhận dùng khóa công khai xác minh chữ ký.
 - Hàm băm SHA-256
   - Tạo dấu vân tay của (IV || ciphertext) để đảm bảo toàn vẹn.
-<div style="text-align: center;">
-  <img  src="READMI/so_do_luong_du_lieu.png" alt="" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
-  <img  src="READMI/luong_du_lieu_gui_nhan.png" alt="" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
-</div>
-
+<p align="center">
+  <img src="ANH/so_do_luong_du_lieu.png" alt="" width="300px" height="300px"/>
+  <img src="ANH/luong_du_lieu_gui_nhan.png" alt="" width="290px" height="300px"/>
+</p>
 c.Các module chính
 - crypto_utils.py: thư viện mật mã.
 - chat_server.py: logic & GUI của Bob.
@@ -52,7 +47,7 @@ d.Thử nghiệm & kết quả
 - Thử nghiệm với văn bản (text) thành công.
 - Tốc độ handshake và gửi/nhận nhanh, chính xác.
 - Tin nhắn được mã hóa & giải mã đúng, toàn vẹn và xác thực.
-<div style="text-align: center;">
-  <img  src="READMI/kq_alice.png" alt="" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
-  <img  src="READMI/kq_bob.png" alt="" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
-</div>
+<p align="center">
+  <img src="ANH/kq_alice.png" alt="" width="500px" height="500px"/>
+  <img src="ANH/kq_bob.png" alt="" width="500px" height="300px"/>
+</p>
