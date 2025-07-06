@@ -52,3 +52,20 @@ d.Thử nghiệm & kết quả
   <img src="ANH/kq_alice.png" alt="" width="500px" height="500px"/>
   <img src="ANH/kq_bob.png" alt="" width="500px" height="300px"/>
 </p>
+
+3.CÁCH CÀI ĐẶT VÀ CHẠY
+
+a.Yêu cầu:
+- Python ≥ 3.7
+- Các thư viện:
+  - cryptography
+  - tkinter (thường có sẵn trong Python)
+  - socket, threading (có sẵn)
+
+b.Cài đặt
+- Cài thư viện:
+  - pip install cryptography
+- Chạy server:
+  - python chat_server.py
+- Chạy client:(Mở một terminal khác rồi chạy)
+  - python chat_client.py
